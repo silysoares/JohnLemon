@@ -241,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6349841113318806156}
   - component: {fileID: 6349841113315984298}
+  - component: {fileID: 5008564251150979194}
   m_Layer: 0
   m_Name: JohnLemon
   m_TagString: Untagged
@@ -255,13 +256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6349841113319100076}
-  m_LocalRotation: {x: 0.011928021, y: 0.0072737215, z: -0.69891125, w: 0.71507204}
-  m_LocalPosition: {x: -0.7083936, y: 0.4667859, z: -0.011190414}
+  m_LocalRotation: {x: -0.054266963, y: -0.64535165, z: 0.06723052, w: 0.7589838}
+  m_LocalPosition: {x: 0.024245322, y: 0.038776863, z: 0.3475814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6349841113318806146}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.56, y: -0.359, z: -88.695}
+  m_LocalEulerAnglesHint: {x: 0.252, y: -80.726, z: 9.91}
 --- !u!137 &6349841113315984298
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -348,6 +349,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.3211945, y: -0.000323236, z: 0.0055948943}
     m_Extent: {x: 0.71350014, y: 0.72880006, z: 0.21759997}
   m_DirtyAABB: 0
+--- !u!136 &5008564251150979194
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349841113319100076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 1.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!1 &6349841113319100078
 GameObject:
   m_ObjectHideFlags: 0
