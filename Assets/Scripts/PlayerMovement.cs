@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+     public float turnSpeed = 20f;
 
     Animator m_Animator;
     Vector3 m_Movement;
-
-    public float turnSpeed;
+    Quaternion m_Rotation = Quaternion.identity;
 
 
     // Start is called before the first frame update
@@ -29,10 +28,10 @@ public class PlayerMovement : MonoBehaviour
 
         bool hasHorizontalInput = !Mathf.Approximately (horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately (vertical, 0f);
-
         bool isWalking = hasHorizontalInput || hasVerticalInput;
         m_Animator.SetBool ("IsWalking", isWalking);
 
         Vector3 desiredForward = Vector3.RotateTowards (transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        m_Rotation = Quaternion.LookRotation (desiredForward);
     }
 }
