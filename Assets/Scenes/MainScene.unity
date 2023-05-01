@@ -475,6 +475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07015445c43516d40b6bf6fcae86990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 1
+  displayImageDuration: 1
+  player: {fileID: 1146180210}
+  exitBackgroundImageCanvasGroup: {fileID: 1920747430}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +733,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963331420}
   m_CullTransparentMesh: 1
+--- !u!1 &1146180210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6349841113319100066, guid: b5248c90cd46f91409790c0a088093d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6349841114510759018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1146180214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6349841113318806146, guid: b5248c90cd46f91409790c0a088093d7,
