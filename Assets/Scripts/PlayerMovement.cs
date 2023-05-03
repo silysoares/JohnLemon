@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
      public float turnSpeed = 20f;
+    AudioSource m_AudioSource;
 
     Animator m_Animator;
     Vector3 m_Movement;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         m_Animator = GetComponent<Animator> ();
         m_Rigidbody = GetComponent<Rigidbody> ();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
